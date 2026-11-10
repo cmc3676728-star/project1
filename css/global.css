@@ -1,0 +1,33 @@
+/* ==========================================
+   global.css - 全域變數、主題色系與通用樣式
+   ========================================== */
+
+:root {
+  /* 專案色彩系統 (煦光與你 - 柔和黃與溫馨粉) */
+  --bg-primary: #FAF6EF;
+  --bg-card: #FFFFFF;
+  --primary-yellow: #F7D070;
+  --primary-yellow-hover: #EBBF50;
+  --accent-pink: #F8C3B9;
+  --accent-pink-hover: #EFA69A;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --text-muted: #888888;
+  --border-color: #EFE6D8;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --transition-normal: 0.3s ease;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.text-center { text-align: center; }
+.text-accent { color: var(--accent-pink-hover); }
+.font-bold { font-weight: 700; }

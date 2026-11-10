@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- SEO Meta 設定 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>煦光與你 | 鄰里123 Connect 10 UI/UX 改善專案</title>
+  <meta name="description" content="第二組「煦光與你」針對鄰里123共生協會 Connect 10 跨專業協作照護平台提出的 UI/UX 改善方案，結合溫馨視覺與以人為本的科技照護。">
+  <meta name="keywords" content="煦光與你, 鄰里123共生協會, Connect 10, UI/UX, 共生社區, 科技照顧, 照服員體驗">
+  <link rel="canonical" href="https://example.com/index.html">
+
+  <!-- Open Graph / 社群分享標籤 -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="煦光與你 | 鄰里123 Connect 10 UI/UX 改善專案">
+  <meta property="og:description" content="打造以人為本的共生社區，優化跨專業協作照護平台使用者體驗。">
+  <meta property="og:image" content="images/og-cover.jpg">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  
+  
+  <!--
+ <link rel="stylesheet" href="css/style.css">
+-->
+    
+  
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+
+  <!-- App Overall Grid Container -->
+  <div class="app-container">
+
+    <!-- 頁首與導覽列 -->
+    <header class="site-header">
+      <div class="brand-logo">
+        <img src="images/第二組 (1).png" alt="煦光與你 Logo">
+        <span>煦光與你</span>
+      </div>
+      
+      <!-- 行動端漢堡選單按鈕 -->
+      <button class="menu-toggle" id="menuToggle" aria-label="切換選單">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- 主要頁面導覽列 -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">專案簡介</a>
+        <a href="partner.html" class="nav-link">合作企業</a>
+        <a href="ui-ux-solutions.html" class="nav-link">UI/UX 方案</a>
+        <a href="timeline.html" class="nav-link">專案進度</a>
+      </nav>
+    </header>
+
+    <!-- 側邊欄 -->
+    <aside class="site-sidebar">
+      <div class="sidebar-widget">
+        <h3 class="widget-title">核心理念</h3>
+        <ul class="widget-list">
+          <li><a>🌱 共生社區</a></li>
+          <li><a>🎓 人才培育</a></li>
+          <li><a>💡 科技照顧</a></li>
+          <li><a>🌏 國際發展</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-widget">
+        <h3 class="widget-title">訪談發現導覽</h3>
+        <ul class="widget-list">
+          <li><a href="#issue-1">1. 行程按鈕與間距</a></li>
+          <li><a href="#issue-2">2. 手機跨平台相容性</a></li>
+          <li><a href="#issue-3">3. 動態字體大小調整</a></li>
+          <li><a href="#issue-4">4. 提前行程推播通知</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 主內容區塊 -->
+    <main class="site-main">
+      
+      <!-- Hero 主視覺區塊 -->
+      <section class="hero-banner">
+        <div>
+          <h1>煦光與你 × 鄰里123</h1>
+          <p style="margin: 12px 0 20px 0;">以「家」的溫度為核心，優化 Connect 10 跨專業協作照護平台，傳遞包容與關懷。</p>
+          <a href="ui-ux-solutions.html" class="btn btn-primary">查看 UI/UX 改善方案</a>
+        </div>
+        <div>
+          <img src="images/第二組.png" alt="東勢共生之家主視覺展示 (大樹、小木屋與小雞)" style="border-radius: var(--radius-md);">
+        </div>
+      </section>
+
+      <!-- 4 大改善對照內容 Grid -->
+      <section>
+        <h2 style="margin-bottom: 16px;">Connect 10 UI/UX 核心改善焦點</h2>
+        <div class="cards-grid">
+          
+          <article class="info-card" id="issue-1">
+            <div>
+              <span class="card-tag">按鈕優化</span>
+              <h3 class="card-title">行程確認按鈕與間距</h3>
+              <p class="card-desc">加大觸控目標區域，並拉開與相鄰按鈕的間距，避免照服員因操作區域過小導致誤觸。</p>
+            </div>
+          </article>
+
+          <article class="info-card" id="issue-2">
+            <div>
+              <span class="card-tag">系統相容</span>
+              <h3 class="card-title">跨 Android 系統相容</h3>
+              <p class="card-desc">優化不同品牌手機系統相容性，確保各型號行動裝置觸控感應順暢無障礙。</p>
+            </div>
+          </article>
+
+          <article class="info-card" id="issue-3">
+            <div>
+              <span class="card-tag">閱讀體驗</span>
+              <h3 class="card-title">自主調整字體大小</h3>
+              <p class="card-desc">新增系統設定自主調節字級功能，讓照服員在急迫照護環境中也能清晰閱讀。</p>
+            </div>
+          </article>
+
+          <article class="info-card" id="issue-4">
+            <div>
+              <span class="card-tag">提醒機制</span>
+              <h3 class="card-title">行程提前彈出與鈴聲通知</h3>
+              <p class="card-desc">新增提前 5-10 分鐘推播提醒，協助新人與忙碌夥伴防範遺漏交接行程。</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 分頁元件 (Pagination) -->
+
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+      <p>&copy; 2026 煦光與你 專案團隊 (第二組) | 合作企業：鄰里123共生協會</p>
+      <p style="margin-top: 4px; color: #A0AEC0;">跨專業數位協作與 AI 長照平台 UI/UX 重構計畫</p>
+    </footer>
+
+  </div>
+
+  <!-- RWD 漢堡選單切片 JavaScript 腳本 -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

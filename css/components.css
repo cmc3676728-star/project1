@@ -1,0 +1,154 @@
+/* ==========================================
+   components.css - 元件樣式 (按鈕、卡片、分頁、側邊選單)
+   ========================================== */
+
+/* 側邊選單群組 */
+.sidebar-widget {
+  background-color: var(--bg-primary);
+  padding: 16px;
+  border-radius: var(--radius-md);
+}
+
+.widget-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--accent-pink);
+}
+
+.widget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.widget-list a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  transition: var(--transition-normal);
+}
+
+.widget-list a:hover {
+  background-color: var(--primary-yellow);
+}
+
+/* 功能按鈕 (點擊區域 >= 48px x 48px 符合作業規範與RWD) */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  min-width: 48px;
+  padding: 0 24px;
+  border-radius: 24px;
+  font-weight: 600;
+  transition: var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary {
+  background-color: var(--primary-yellow);
+  color: var(--text-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-yellow-hover);
+}
+
+.btn-accent {
+  background-color: var(--accent-pink);
+  color: var(--text-primary);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-pink-hover);
+}
+
+/* UI/UX 卡片元件 */
+.info-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-tag {
+  display: inline-block;
+  background-color: var(--accent-pink);
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  width: fit-content;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+/* 分頁元件 (Pagination) */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.page-btn {
+  min-width: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  font-weight: 600;
+  transition: var(--transition-normal);
+}
+
+.page-btn:hover, .page-btn.active {
+  background-color: var(--primary-yellow);
+  border-color: var(--primary-yellow-hover);
+}
+
+/* 行動端漢堡按鈕 (預設隱藏) */
+.menu-toggle {
+  display: none;
+  min-width: 48px;
+  min-height: 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 3px;
+  background-color: var(--text-primary);
+  border-radius: 2px;
+}
