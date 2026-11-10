@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- SEO Meta 設定 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>專案進度與行程規劃 | 煦光與你</title>
+  <meta name="description" content="煦光與你團隊專案甘特圖與行程規劃：從業者說明會、共生之家蹲點採訪、SROI工作坊至期末成果展。">
+  <meta name="keywords" content="煦光與你, 專案進度, 甘特圖, 東勢共生之家, SROI工作坊, 成果展">
+  <link rel="canonical" href="https://example.com/timeline.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="專案進度與行程規劃 | 煦光與你">
+  <meta property="og:description" content="煦光與你專案甘特圖與關鍵里程碑規劃。">
+  <meta property="og:image" content="images/og-cover.jpg">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+  <!-- 1. 最先重置樣式 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- 2. 全域變數與主題色 -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- 3. 大架構 Grid 佈局 -->
+  <link rel="stylesheet" href="css/layout.css">
+  <!-- 4. 元件樣式 (按鈕/卡片/分頁) -->
+  <link rel="stylesheet" href="css/components.css">
+  <!-- 5. 最後才是 RWD 響應式微調 -->
+  <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- 頁首導覽列 -->
+    <header class="site-header">
+      <div class="brand-logo">
+        <img src="images/第二組 (1).png" alt="煦光與你 Logo">
+        <span>煦光與你</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="切換選單">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">專案簡介</a>
+        <a href="partner.html" class="nav-link">合作企業</a>
+        <a href="ui-ux-solutions.html" class="nav-link">UI/UX 方案</a>
+        <a href="timeline.html" class="nav-link active">專案進度</a>
+      </nav>
+    </header>
+
+    <!-- 側邊欄 -->
+    <aside class="site-sidebar">
+      <div class="sidebar-widget">
+        <h3 class="widget-title">重要死線</h3>
+        <ul class="widget-list">
+          <li><a>📌 10/16 期中階段核評</a></li>
+          <li><a>📌 11/27 期末繳交</a></li>
+          <li><a>📌 12/09 小論文繳交</a></li>
+          <li><a>📌 12/9-17 靜態成果展</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 主內容區塊 -->
+    <main class="site-main">
+
+      <section>
+        <h2>專案行程規劃與甘特圖里程碑</h2>
+        <p style="margin-top: 8px; color: var(--text-secondary);">
+          團隊持續依規劃推動實地蹲點訪談、UI/UX 改善方案研擬與社會影響力培力[cite: 1, 9]：
+        </p>
+      </section>
+
+      <!-- 時間軸 / 甘特圖清單 Grid -->
+      <section class="cards-grid">
+
+        <div class="info-card">
+          <span class="card-tag">暑假期間</span>
+          <h3 class="card-title">業者介紹與說明會</h3>
+          <p class="card-desc">7/10 鄰里123業者介紹及 Connect 10 使用說明會[cite: 9]。</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-tag">9 月份</span>
+          <h3 class="card-title">專題演講學習</h3>
+          <p class="card-desc">9/6 參與「1. 共生照顧 2. 資源盤點」專題演講[cite: 9]。</p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-tag">10 月份 (核心實務)</span>
+          <h3 class="card-title">實地蹲點與工作坊</h3>
+          <p class="card-desc">
+            • 10/02 東勢共生之家蹲點與照服員採訪[cite: 1, 9]<br>
+            • 10/13 SROI 社會影響力培力工作坊[cite: 1, 9]<br>
+            • 10/16 期中階段性成果核評[cite: 9]
+          </p>
+        </div>
+
+        <div class="info-card">
+          <span class="card-tag">11-12 月份</span>
+          <h3 class="card-title">成果展與專案總結</h3>
+          <p class="card-desc">
+            • 11/27 期末成果繳交[cite: 9]<br>
+            • 12/09 小論文正式繳交[cite: 9]<br>
+            • 12/09 - 12/17 靜態成果展呈現[cite: 9]
+          </p>
+        </div>
+
+      </section>
+
+
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+      <p>&copy; 2026 煦光與你 專案團隊 (第二組) | 合作企業：鄰里123共生協會</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

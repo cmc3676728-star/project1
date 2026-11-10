@@ -1,0 +1,76 @@
+/* ==========================================
+   responsive.css - RWD 斷點適配與行動裝置優化
+   ========================================== */
+
+/* 平板斷點 (< 1024px) */
+@media (max-width: 1024px) {
+  .app-container {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .hero-banner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* 手持裝置/手機斷點 (< 768px) */
+@media (max-width: 768px) {
+  .app-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+
+  .site-header {
+    padding: 0 16px;
+  }
+
+  /* 漢堡按鈕顯示 */
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* 導覽列摺疊 */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-card);
+    flex-direction: column;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .site-sidebar {
+    border-right: none;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .site-main {
+    padding: 20px 16px;
+  }
+
+  .hero-banner {
+    padding: 24px 16px;
+  }
+
+  .pagination {
+    gap: 4px;
+  }
+  
+  .page-btn {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}

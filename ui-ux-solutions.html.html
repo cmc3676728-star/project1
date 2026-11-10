@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <!-- SEO Meta 設定 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX 改善方案 | 煦光與你 - Connect 10 體驗優化</title>
+  <meta name="description" content="深入東勢共生之家實地訪談照服員，提出 Connect 10 平台按鈕加大、跨系統相容、動態字體與行程推播提醒 4 大 UI/UX 改善方案。">
+  <meta name="keywords" content="Connect 10, UI/UX改善, 照服員體驗, 按鈕優化, 系統通知, 煦光與你">
+  <link rel="canonical" href="https://example.com/ui-ux-solutions.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UI/UX 改善方案 | 煦光與你">
+  <meta property="og:description" content="針對照顧現場實務痛點，提出的 4 大 UI/UX 改善方案。">
+  <meta property="og:image" content="images/og-cover.jpg">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+  <!-- 1. 最先重置樣式 -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- 2. 全域變數與主題色 -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- 3. 大架構 Grid 佈局 -->
+  <link rel="stylesheet" href="css/layout.css">
+  <!-- 4. 元件樣式 (按鈕/卡片/分頁) -->
+  <link rel="stylesheet" href="css/components.css">
+  <!-- 5. 最後才是 RWD 響應式微調 -->
+  <link rel="stylesheet" href="css/responsive.css">
+    
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- 頁首導覽列 -->
+    <header class="site-header">
+      <div class="brand-logo">
+        <img src="images/第二組 (1).png" alt="煦光與你 Logo">
+        <span>煦光與你</span>
+      </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="切換選單">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link">專案簡介</a>
+        <a href="partner.html" class="nav-link">合作企業</a>
+        <a href="ui-ux-solutions.html" class="nav-link active">UI/UX 方案</a>
+        <a href="timeline.html" class="nav-link">專案進度</a>
+      </nav>
+    </header>
+
+    <!-- 側邊欄 -->
+    <aside class="site-sidebar">
+      <div class="sidebar-widget">
+        <h3 class="widget-title">設計初衷</h3>
+        <p style="font-size: 0.9rem; color: var(--text-secondary);">
+          還原東勢共生之家真實樣貌，傳達「家」的溫度與歸屬感，讓科技照顧更貼近照服員日常。
+        </p>
+      </div>
+      <div class="sidebar-widget">
+        <h3 class="widget-title">四大優化痛點</h3>
+        <ul class="widget-list">
+          <li><a href="#sol-1">1. 行程表確認按鈕</a></li>
+          <li><a href="#sol-2">2. 手機跨系統相容</a></li>
+          <li><a href="#sol-3">3. 動態字體大小</a></li>
+          <li><a href="#sol-4">4. 提前行程提醒機制</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- 主內容區塊 -->
+    <main class="site-main">
+
+      <section>
+        <h2>東勢共生之家參訪訪談發現與 UI/UX 改善方案</h2>
+        <p style="margin-top: 8px; color: var(--text-secondary);">
+          經過 10/2 前往台中東勢共生之家的蹲點訪談，我們歸納出照服員在照顧現場遇到的 4 大痛點並提出對應解法：
+        </p>
+      </section>
+
+      <!-- 4 大方案網格排版 -->
+      <section class="cards-grid" style="grid-template-columns: 1fr;">
+
+        <!-- 方案 1 -->
+        <article class="info-card" id="sol-1">
+          <div>
+            <span class="card-tag">痛點 1：按鈕過小且相鄰過近</span>
+            <h3 class="card-title">1. 行程表確認按鈕過小與誤觸問題</h3>
+            <p class="card-desc">
+              <strong>【現狀發現】</strong> 受訪照服員反映手較大時，行程表確認按紐需要極精確點擊圓圈才能完成事項，且相鄰按鈕間距過近，非常容易誤觸旁邊按鍵。<br>
+              <strong>【UI/UX 解法】</strong> 調整確認按鈕範圍（加大 Touch Target 至 48px×48px 以上），並適度拉開相鄰按鈕之間的間距，提升手持動態操作準確率。
+            </p>
+          </div>
+        </article>
+
+        <!-- 方案 2 -->
+        <article class="info-card" id="sol-2">
+          <div>
+            <span class="card-tag">痛點 2：手機跨系統相容差異</span>
+            <h3 class="card-title">2. 不同品牌/系統手機相容性問題</h3>
+            <p class="card-desc">
+              <strong>【現狀發現】</strong> 安卓 (Android) 系統手機使用者相比 iOS 系統，較容易出現按鍵無法感應等系統不相容情況。<br>
+              <strong>【UI/UX 解法】</strong> 團隊記錄此類跨品牌/型號的感應問題，並持續進行跨平臺觸控元件相容性測試與反饋機制建立。
+            </p>
+          </div>
+        </article>
+
+        <!-- 方案 3 -->
+        <article class="info-card" id="sol-3">
+          <div>
+            <span class="card-tag">痛點 3：照護現場閱讀困難</span>
+            <h3 class="card-title">3. 字體大小自主調整機制</h3>
+            <p class="card-desc">
+              <strong>【現狀發現】</strong> 照護過程中無法及時調整文字大小，在急迫或高強度照顧環境下易造成閱讀上的困難。<br>
+              <strong>【UI/UX 解法】</strong> 於系統設定中新增「自主調整文字大小」功能，讓照服員能依個人需求彈性調整字級，讓介面閱讀更順暢。
+            </p>
+          </div>
+        </article>
+
+        <!-- 方案 4 -->
+        <article class="info-card" id="sol-4">
+          <div>
+            <span class="card-tag">痛點 4：交接或忙碌致行程遺漏</span>
+            <h3 class="card-title">4. 提前 5-10 分鐘行程推播與鈴聲提醒</h3>
+            <p class="card-desc">
+              <strong>【現狀發現】</strong> 目前必須開啟網頁才能查看行程，新交接人員不熟悉行程或繁忙時易造成行程遺漏。<br>
+              <strong>【UI/UX 解法】</strong> 新增每個行程前 5-10 分鐘的手機彈出訊息與鈴聲提醒，補足記憶死角（平常可設定靜音），協助新進與繁忙照服員順暢交接。
+            </p>
+          </div>
+        </article>
+
+      </section>
+
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="site-footer">
+      <p>&copy; 2026 煦光與你 專案團隊 (第二組) | 合作企業：鄰里123共生協會</p>
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navMenu').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

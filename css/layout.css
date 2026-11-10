@@ -1,0 +1,110 @@
+/* ==========================================
+   layout.css - CSS Grid 與整體版面架構
+   ========================================== */
+
+/* 全站大骨架 Grid 佈局 */
+.app-container {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 70px 1fr auto;
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+  min-height: 100vh;
+}
+
+/* Header 頂部導覽列 */
+.site-header {
+  grid-area: header;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.brand-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  transition: var(--transition-normal);
+}
+
+.nav-link:hover, .nav-link.active {
+  background-color: var(--primary-yellow);
+  color: var(--text-primary);
+}
+
+/* Sidebar 側邊欄 */
+.site-sidebar {
+  grid-area: sidebar;
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--border-color);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Main 主要內容區 */
+.site-main {
+  grid-area: main;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Hero 英雄區塊 Grid */
+.hero-banner {
+  background: linear-gradient(135deg, var(--primary-yellow), var(--accent-pink));
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: center;
+  box-shadow: var(--shadow-md);
+}
+
+/* 內容卡片網格 */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Footer 頁尾 */
+.site-footer {
+  grid-area: footer;
+  background-color: #2D3748;
+  color: #FFFFFF;
+  padding: 32px 24px;
+  text-align: center;
+  font-size: 0.9rem;
+}
